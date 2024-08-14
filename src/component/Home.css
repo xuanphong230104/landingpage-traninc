@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+ 
+  .part-1-section {
+    height: 40vh; /* Adjust as needed */
+  }
+
+}
+@media (max-width: 630px) {
+ 
+  .part-1-section {
+    height: 25vh; /* Adjust as needed */
+  }
+
+}
+@media (max-width: 578px) {
+ 
+  .part-1-section {
+    height: 27vh; /* Adjust as needed */
+  }
+
+}
+@media (max-width: 480px) {
+ 
+  .part-1-section {
+    height: 23vh; /* Adjust as needed */
+  }
+
+}
+@media (max-width: 404) {
+ 
+  .part-1-section {
+    height: 18vh; /* Adjust as needed */
+    margin-top: 57px;
+  }
+
+}
+@media (max-width: 396px) {
+ 
+  .part-1-section {
+    height: 18vh; /* Adjust as needed */
+    margin-top: 57px;
+  }
+
+}
+.part-2-section{
+  height: 20%;
+  background:rgba(0,0,0,0)
+}
