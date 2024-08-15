@@ -14,17 +14,17 @@ function TestingServices() {
   return (
     <div className="">
       {/* Title Section */}
-      <h2 className="text-2xl pt-10 font-bold mb-6   md:ml-24 lg:ml-52 md:text-3xl lg:px-40  lg:text-5xl max-sm:text-center max-md:ml-12">
+      <h2 className="text-2xl pt-10 font-bold mb-6 ml-12 sm:ml-24 md:ml-24 lg:ml-52 md:text-4xl lg:px-40  lg:text-5xl ">
         Testing Services
       </h2>
 
       {/* Description Section */}
-      <p className="text-xl font-normal text-gray-600 dark:text-gray-400 lg:px-44 lg:ml-60 my-2.5  md:ml-24  max-sm:text-center max-md:ml-12 ">
+      <p className="text-xl font-normal text-gray-600 dark:text-gray-400 lg:px-44 lg:ml-60 my-2.5 sm:ml-24 md:ml-24 max-sm:ml-8  ">
         Why You Need Us As Independent Testing Agent?
       </p>
 
       {/* List Section */}
-      <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside mb-6mx-auto max-w-8xl md:ml-24 lg:ml-52  lg:px-40 max-sm:text-center max-md:ml-12 ">
+      <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside mb-6mx-auto max-w-8xl sm:ml-24 md:ml-24 lg:ml-52  lg:px-40 max-sm:ml-16 ">
         {listItems.map((item, index) => (
           <li key={index} className="mb-2">
             {item}
@@ -33,13 +33,13 @@ function TestingServices() {
       </ol>
 
       {/* Benefits Section */}
-      <h2 className=" font-bold mb-6  text-xl lg:px-44  md:ml-24 lg:ml-52 max-sm:text-center max-md:ml-12 ">
+      <h2 className=" font-bold mb-6  text-xl lg:px-44 max-sm:ml-6 max-md:ml-12 lg:ml-52 md:ml-16 ">
         All these benefits help to reduce time-to-market and deliver a better
         quality product within time and budget.
       </h2>
 
       {/* Cards Section */}
-      <p className="text-xl font-normal text-gray-700 dark:text-gray-400  mb-6 ml-60 lg:px-44  ">
+      <p className="text-xl font-normal text-gray-700 dark:text-gray-400  mb-6 ml-60 lg:px-44 max-sm:ml-6 max-md:ml-12 lg:ml-52 md:ml-16">
         We do:
       </p>
 

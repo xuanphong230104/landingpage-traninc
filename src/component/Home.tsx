@@ -8,6 +8,7 @@ import AboutUs from "./AboutUs.tsx";
 import Contact from "./Contact";
 import "./Home.css"; // Import your custom CSS for home styles
 import { animated, useSpring } from '@react-spring/web';
+import { height } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const Home: React.FC = () => {
   const topRef = React.useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ const Home: React.FC = () => {
       {/* Page Sections */}
       <Row className="absolute">
         <Col xs={24}>
-          <div id="part-1" className="part-1-section relative ">
+          <div id="part-1" className="part-1-section relative" >
             <img
               src="https://traninc.vn/wp-content/uploads/2019/08/IMG_4643-2-2-e1565661137708.jpg"
               alt="background"
@@ -64,7 +65,7 @@ const Home: React.FC = () => {
           </div>
         </Col>
         <Col xs={24}>
-          <div ref={offerSectionRef} id="part-2" className="sm:pt-20">
+          <div ref={offerSectionRef} id="part-2" className="max-sm:pt-10">
             <Offer />
           </div>
           <div id="part-3" style={{ background: "rgba(0,0,0,0.02)" }}>
