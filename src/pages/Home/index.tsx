@@ -7,8 +7,6 @@ import Footer from "../../component/Footer/index.jsx";
 import AboutUs from "../../component/AboutUs/index.tsx";
 import Contact from "../../component/Contact/index.tsx";
 import "./index.scss"; // Import your custom CSS for home styles
-import { animated, useSpring } from '@react-spring/web';
-import { height } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const Home: React.FC = () => {
   const topRef = React.useRef<HTMLDivElement>(null);
@@ -26,10 +24,6 @@ const Home: React.FC = () => {
     }
   };
 
-  const springs = useSpring({
-    from: { x: 250 },
-    to: { x: 0 },
-  });
 
   return (
     <div>
@@ -39,23 +33,23 @@ const Home: React.FC = () => {
       {/* Page Sections */}
       <Row className="absolute">
         <Col xs={24}>
-          <div id="part-1" className="part-1-section relative" >
+          <div id="part-1" className="part-1-section" >
             <img
               src="https://traninc.vn/wp-content/uploads/2019/08/IMG_4643-2-2-e1565661137708.jpg"
               alt="background"
               className="part-1-bg  "
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-black p-4">
-              <animated.div style={{ ...springs }} className="md:mb-6 text-2xl pt-20 font-bold sm:text-3xl md:text-6xl sm:pt-20 text-xs:pt-20 text-center animate-slide-right">
+            <div className="content">
+              <div  className="title">
                 Full circle testing services
-              </animated.div>
-              <animated.div style={{ ...springs }} className=" py-4 md:py-16 text-base sm:text-3xl text-center animate-slide-right">
+              </div>
+              <div  className=" description">
                 We're here to make sure your solution is tested thoroughly, on
                 time, and within budget.
-              </animated.div>
+              </div>
               <a
                 href="#part-2"
-                className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                className="offer-button"
                 style={{ transform: "scale(1.6)" }}
                 onClick={scrollToOffer}
               >

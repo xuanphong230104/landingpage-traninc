@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+  .part-1-section {
+    height: 40vh; /* Adjust as needed */
+  }
+}
+@media (max-width: 630px) {
+  .part-1-section {
+    height: 32vh; /* Adjust as needed */
+  }
+}
+@media (max-width: 578px) {
+  .part-1-section {
+    height: 27vh; /* Adjust as needed */
+  }
+}
+@media (max-width: 480px) {
+  .part-1-section {
+    height: 23vh; /* Adjust as needed */
+  }
+}
+@media (max-width: 404) {
+  .part-1-section {
+    height: 18vh; /* Adjust as needed */
+    margin-top: 57px;
+  }
+}
+@media (max-width: 396px) {
+  .part-1-section {
+    height: 18vh; /* Adjust as needed */
+    margin-top: 57px;
+  }
+}
+.part-2-section {
+  height: 20%;
+  background: rgba(0, 0, 0, 0);
+}
+
+#part-1 {
+  position: relative;
+
+  .part-1-bg {
+    width: 100%;
+    height: auto; // Adjust based on your layout requirements
+  }
+
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    .title {
+      font-size: 4rem; // Equivalent to Tailwind's text-2xl
+      // padding-top: 3rem; // Equivalent to Tailwind's pt-20
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      animation: slide-right 1s ease-out;
+    }
+    .title::after {
+      content: "";
+      display: block;
+      background-color: black;
+      position: absolute;
+      left: 45%;
+      bottom: 0;
+      width: 50%;
+      height: 3px;
+      margin-left: -20%;
+    }
+
+    .description {
+      font-size: 2rem; // Equivalent to Tailwind's text-base
+      padding-top: 4rem; // Adjust padding as needed
+      text-align: center;
+      animation: slide-right 1s ease-out;
+    }
+
+    .offer-button {
+      color: white;
+      background-color: #2d2d2d; // Equivalent to Tailwind's bg-gray-800
+      margin-top: 3rem;
+      padding: 0.625rem 1.25rem; // Equivalent to Tailwind's px-5 py-2.5
+      font-size: 0.875rem; // Equivalent to Tailwind's text-sm
+      border-radius: 0.5rem; // Equivalent to Tailwind's rounded-lg
+      border: 1px solid transparent;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #1a1a1a; // Equivalent to Tailwind's hover:bg-gray-900
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.5); // Equivalent to Tailwind's focus:ring-gray-300
+        border-color: #2d2d2d; // Equivalent to Tailwind's dark:border-gray-700
+      }
+
+      &.dark {
+        background-color: #2d2d2d; // Equivalent to Tailwind's dark:bg-gray-800
+        &:hover {
+          background-color: #1a1a1a; // Equivalent to Tailwind's dark:hover:bg-gray-700
+        }
+        &:focus {
+          box-shadow: 0 0 0 4px rgba(55, 65, 81, 0.5); // Equivalent to Tailwind's dark:focus:ring-gray-700
+        }
+      }
+    }
+  }
+}
+
+// Define keyframes for slide-right animation
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
