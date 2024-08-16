@@ -1,0 +1,91 @@
+.cardContainer {
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  max-width: 60rem;
+  position: relative; // Allow absolute positioning of child elements
+
+  &:hover {
+    background-color: #f3f4f6; // Light gray background for light mode
+    .dark & {
+      background-color: #2d3748; // Dark gray background for dark mode
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px; // Fixed width for the border container
+  height: 92px; // Fixed height for the border container
+  margin-top: 2rem; // Adjust if needed
+}
+
+.icon {
+  font-size: 3rem; // Adjust as needed to fit within the 92x92px border
+  z-index: 1;
+}
+
+.iconContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92px;
+  height: 92px;
+  border: 2px solid black; // Border color and thickness
+}
+
+.textContainer {
+  position: relative; // Allows for absolute positioning of child elements
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; // Align items to the start (top)
+  padding: 4rem 1rem 1rem 1rem; // Add padding to make space for the title
+  line-height: 1.5;
+  text-align: center; // Center-align text for smaller screens
+  @media (min-width: 768px) {
+    text-align: left; // Align text to the left for larger screens
+    padding: 4rem 2rem 2rem 2rem; // Adjust padding for larger screens
+  }
+}
+
+.title {
+  position: absolute; // Absolute positioning within textContainer
+  top: 1rem; // Space from the top
+  left: 1rem; // Align with padding
+  right: 1rem; // Align with padding
+  margin: 0; // Remove default margins
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c; // Dark gray text color for light mode
+  .dark & {
+    color: #f7fafc; // White text color for dark mode
+  }
+}
+
+.description {
+  margin-top: 1rem; // Space between title and description
+  font-weight: normal;
+  color: #4a5568; // Gray text color for light mode
+  font-size: 1rem;
+  .dark & {
+    color: #e2e8f0; // Light gray text color for dark mode
+  }
+}

@@ -189,9 +189,12 @@
 
 @media (max-width: 396px) {
   #part-1 {
-    .part-1-section {
-      height: 18vh; // Adjust height
-      margin-top: 57px; // Adjust margin-top
+    .content {
+      .title {
+        font-size: 25px; // Adjust font size further for even smaller screens
+        padding-top: 30px;
+      }
+     
     }
   }
 }
