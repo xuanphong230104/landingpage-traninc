@@ -50,7 +50,7 @@ const Home: React.FC = () => {
               <a
                 href="#part-2"
                 className="offer-button"
-                style={{ transform: "scale(1.6)" }}
+                style={{ transform: "scale(1.4)" }}
                 onClick={scrollToOffer}
               >
                 See our offer
