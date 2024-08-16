@@ -12,7 +12,7 @@ function TestingServices() {
   ];
 
   return (
-    <div className="">
+    <div className="p-2">
       {/* Title Section */}
       <h2 className="text-2xl pt-10 font-bold mb-6 ml-12 sm:ml-24 md:ml-24 lg:ml-52 md:text-4xl lg:px-40  lg:text-5xl ">
         Testing Services
@@ -24,7 +24,7 @@ function TestingServices() {
       </p>
 
       {/* List Section */}
-      <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside mb-6mx-auto max-w-8xl sm:ml-24 md:ml-24 lg:ml-52  lg:px-40 max-sm:ml-16 ">
+      <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside mb-6mx-auto max-w-8xl sm:ml-24 md:ml-24 lg:ml-72  lg:px-40 max-sm:ml-16 ">
         {listItems.map((item, index) => (
           <li key={index} className="mb-2">
             {item}
@@ -43,7 +43,7 @@ function TestingServices() {
         We do:
       </p>
 
-      <div className="grid grid-cols-1  gap-6 max-w-screen-4xl  ">
+      <div className="grid grid-cols-1  gap-6 max-w-screen-4xl md:ml-10 ">
         <div className="flex justify-center items-center ">
           <Card
             title="Functional and non-functional testing"

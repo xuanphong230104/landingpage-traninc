@@ -68,14 +68,14 @@ const Home: React.FC = () => {
           <div
             id="part-4"
             className="sm:h-1"
-            style={{ height: "34vh", background: "rgba(0,0,0,0.02)" }}
+            style={{ height: "27vh", background: "rgba(0,0,0,0.02)" }}
           >
             <AboutUs />
           </div>
           <div
             id="part-5"
             className="part-1-section"
-            style={{ height: "25vh", background: "rgba(0,0,0,0.50)" }}
+            style={{ height: "22vh", background: "rgba(0,0,0,0.50)" }}
           >
             <Contact />
           </div>
