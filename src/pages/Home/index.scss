@@ -133,6 +133,7 @@
     .part-1-section {
       height: 27vh; // Adjust height
     }
+
     .content {
       .title {
         font-size: 25px; // Adjust font size further for even smaller screens
@@ -144,6 +145,7 @@
       transform: scale(1) !important;
     }
   }
+ 
 }
 
 @media (max-width: 436px) {
@@ -151,6 +153,11 @@
     height: 23vh; // Adjust height
     margin-top: 57px !important;
   }
+
+  .part-4-section {
+    height: 38vh !important;
+  }
+
   #part-1 {
     .content {
       .title {
@@ -176,7 +183,7 @@
         font-size: 25px; // Adjust font size further for even smaller screens
         padding-top: 25px;
       }
-      .description{
+      .description {
         font-size: 15px;
       }
     }
@@ -194,7 +201,6 @@
         font-size: 25px; // Adjust font size further for even smaller screens
         padding-top: 30px;
       }
-     
     }
   }
 }

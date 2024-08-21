@@ -5,7 +5,7 @@ import { faHome, faMailReply } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2 className="contact-title lg:ml-96 md:ml-10 sm:ml-10 py-10 text-2xl font-bold md:text-xl text-white pl-10">Get in touch</h2>
+      <h2 className="contact-title lg:ml-96 md:ml-10 sm:ml-10 py-5 text-2xl font-bold md:text-xl text-white pl-10">Get in touch</h2>
       <div className="contact-info flex flex-col gap-4">
         <div className="flex items-center">
           <FontAwesomeIcon icon={faHome} className="lg:ml-96 md:ml-10 sm:ml-10 pl-10 " />
