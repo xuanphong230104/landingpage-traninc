@@ -91,9 +91,7 @@
 
 @media (max-width: 800px) {
   #part-1 {
-    .part-1-section {
-      height: 32vh; // Adjust height
-    }
+   
     .content {
       .title {
         font-size: 2.2rem; // Adjust font size further for even smaller screens
@@ -103,9 +101,7 @@
         padding-top: 20px;
       }
     }
-    .part-1-section {
-      height: 40vh; // Adjust height for smaller screens
-    }
+    
     .offer-button {
       transform: scale(1.2) !important;
     }
@@ -114,9 +110,7 @@
 
 @media (max-width: 630px) {
   #part-1 {
-    .part-1-section {
-      height: 32vh; // Adjust height
-    }
+    
     .content {
       .title {
         font-size: 30px; // Adjust font size further for even smaller screens
@@ -130,9 +124,7 @@
 }
 @media (max-width: 578px) {
   #part-1 {
-    .part-1-section {
-      height: 27vh; // Adjust height
-    }
+   
 
     .content {
       .title {
@@ -150,13 +142,11 @@
 
 @media (max-width: 436px) {
   .part-1-section {
-    height: 23vh; // Adjust height
+   
     margin-top: 57px !important;
   }
 
-  .part-4-section {
-    height: 38vh !important;
-  }
+ 
 
   #part-1 {
     .content {
@@ -174,7 +164,7 @@
 
 @media (max-width: 404px) {
   .part-1-section {
-    height: 18vh; // Adjust height
+    
     margin-top: 57px; // Adjust margin-top
   }
   #part-1 {
@@ -206,7 +196,7 @@
 }
 
 .part-2-section {
-  height: 20%;
+
   background: rgba(0, 0, 0, 0);
 }
 
