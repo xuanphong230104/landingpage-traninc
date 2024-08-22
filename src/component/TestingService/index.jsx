@@ -12,36 +12,38 @@ function TestingServices() {
   ];
 
   return (
-    <div className="p-2">
+    <div className="pl-4 ">
       {/* Title Section */}
-      <h2 className="text-2xl pt-10 font-bold mb-6 ml-12 sm:ml-24 md:ml-24 lg:ml-52 md:text-4xl lg:px-40  lg:text-5xl ">
-        Testing Services
-      </h2>
+      <div className="mx-auto w-fit">
+        <h2 className="text-4xl pt-10 font-bold mb-6 md:text-4xl lg:px-40  lg:text-5xl ">
+          Testing Services
+        </h2>
 
-      {/* Description Section */}
-      <p className="text-xl font-normal text-gray-600 dark:text-gray-400 lg:px-44 lg:ml-60 my-2.5 sm:ml-24 md:ml-24 max-sm:ml-8  ">
-        Why You Need Us As Independent Testing Agent?
-      </p>
+        {/* Description Section */}
+        <p className="text-xl font-normal text-gray-600 dark:text-gray-400 lg:px-44  ml-8 py-4  ">
+          Why You Need Us As Independent Testing Agent?
+        </p>
 
-      {/* List Section */}
-      <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside mb-6mx-auto max-w-8xl sm:ml-24 md:ml-24 lg:ml-72  lg:px-40 max-sm:ml-16 ">
-        {listItems.map((item, index) => (
-          <li key={index} className="mb-2">
-            {item}
-          </li>
-        ))}
-      </ol>
+        {/* List Section */}
+        <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside ml-12  lg:px-52">
+          {listItems.map((item, index) => (
+            <li key={index} className="mb-2">
+              {item}
+            </li>
+          ))}
+        </ol>
 
-      {/* Benefits Section */}
-      <h2 className=" font-bold mb-6  text-xl lg:px-44 max-sm:ml-6 max-md:ml-12 lg:ml-52 md:ml-16 ">
-        All these benefits help to reduce time-to-market and deliver a better
-        quality product within time and budget.
-      </h2>
-
-      {/* Cards Section */}
-      <p className="text-xl font-normal text-gray-700 dark:text-gray-400  mb-6 ml-60 lg:px-44 max-sm:ml-6 max-md:ml-12 lg:ml-52 md:ml-16">
+        {/* Benefits Section */}
+        <h2 className=" font-bold mb-6  text-xl lg:px-52  ">
+          All these benefits help to reduce time-to-market and deliver a better
+          quality product within time and budget.
+        </h2>
+        <p className="text-xl font-normal text-gray-700 dark:text-gray-400  mb-6  lg:px-40  max-md:ml-12  md:ml-16">
         We do:
       </p>
+      </div>
+      {/* Cards Section */}
+    
 
       <div className="grid grid-cols-1  gap-6 max-w-screen-4xl md:ml-10 ">
         <div className="flex justify-center items-center ">
