@@ -67,22 +67,28 @@ const Home: React.FC = () => {
           </div>
           <div
             id="part-4"
+
             className="part-4-section"
             style={{ height: "30vh", background: "rgba(0,0,0,0.02)" }}
+
           >
             <AboutUs />
           </div>
           <div
             id="part-5"
+
             className="part-5-section"
             style={{ height: "24vh", background: "rgba(0,0,0,0.50)" }}
+
           >
             <Contact />
           </div>
           <div
             id="part-6"
             className="part-6-section"
+
             style={{ height: "3vh", background: "rgba(0,0,0,0.50)" }}
+
           >
             <Footer />
           </div>
