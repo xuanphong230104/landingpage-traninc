@@ -6,7 +6,7 @@ const Card = ({ title, description, icon }) => {
   return (
     <div className="cardContainer">
       <a href="#" className="card">
-        <div className="lg:pb-24 ">
+        <div className=" ">
           <div className="iconContainer">
             <FontAwesomeIcon
               icon={icon as IconProp}

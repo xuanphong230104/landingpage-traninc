@@ -10,7 +10,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   border-radius: 0.5rem;
   max-width: 60rem;
   position: relative; // Allow absolute positioning of child elements
@@ -35,6 +35,9 @@
   width: 92px; // Fixed width for the border container
   height: 92px; // Fixed height for the border container
   margin-top: 2rem; // Adjust if needed
+  content: "";
+  border: 2px solid black; // Border color and thickness
+
 }
 
 .icon {
@@ -42,27 +45,17 @@
   z-index: 1;
 }
 
-.iconContainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 92px;
-  height: 92px;
-  border: 2px solid black; // Border color and thickness
-}
-
 .textContainer {
   position: relative; // Allows for absolute positioning of child elements
   display: flex;
   flex-direction: column;
   justify-content: flex-start; // Align items to the start (top)
-  padding: 2rem 1rem 1rem 1rem; // Add padding to make space for the title
+  padding-left: 1.5rem; // Add padding to make space for the title
+  padding-right: 1rem;
   line-height: 1.5;
   text-align: center; // Center-align text for smaller screens
   @media (min-width: 768px) {
     text-align: left; // Align text to the left for larger screens
-    padding: 1rem 2rem 2rem 2rem; // Adjust padding for larger screens
   }
 }
 
