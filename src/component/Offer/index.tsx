@@ -16,7 +16,7 @@ const Offer: React.FC = () => {
       </h2>
 
       {/* Card Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl mx-auto lg: px-10">
+      <div className="grid grid-cols-1 pt-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl mx-auto lg: px-10">
         <div className="flex justify-center items-center">
           <Card
             title="Independent testing services"
