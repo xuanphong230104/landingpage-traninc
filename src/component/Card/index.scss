@@ -57,12 +57,11 @@
   height: 92px;
   margin-top: 2rem;
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
+  border: 2px solid  ;
+  
+  
 
-  .card:hover & {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+
 
   .dark .card & {
     background-color: rgba(255, 255, 255, 0.05);

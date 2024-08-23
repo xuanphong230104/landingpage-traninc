@@ -124,22 +124,26 @@ const Navbar: React.FC = () => {
         </Drawer>
 
         <div className="hidden md:flex w-full md:w-auto">
-          <Anchor
-            onClick={(e) => e.preventDefault()}
-            direction="horizontal"
-            className={`font-medium flex flex-row space-x-8 rtl:space-x-reverse ${
-              isSmallScreen ? "text-sm" : ""
-            }`}
-            affix={false}
-            style={{ backgroundColor: "inherit" }} // Matches parent background color
-            items={[
-              { key: "part-1", href: "#part-1", title: "Home" },
-              { key: "part-2", href: "#part-2", title: "Our Offer" },
-              { key: "part-3", href: "#part-3", title: "Testing Services" },
-              { key: "part-4", href: "#part-4", title: "About Us" },
-              { key: "part-5", href: "#part-5", title: "Contact Us" },
-            ]}
-          />
+        <Anchor
+  onClick={(e) => e.preventDefault()}
+  bounds={2}
+  direction="horizontal"
+  className={`font-medium flex flex-row rtl:space-x-reverse ${
+    isSmallScreen ? "text-sm" : ""
+  }`}
+  affix={false}
+  style={{ 
+    backgroundColor: "inherit",
+    gap: "1.5rem" // Adds space between items
+  }}
+  items={[
+    { key: "part-1", href: "#part-1", title: "Home" },
+    { key: "part-2", href: "#part-2", title: "Our Offer" },
+    { key: "part-3", href: "#part-3", title: "Testing Services" },
+    { key: "part-4", href: "#part-4", title: "About Us" },
+    { key: "part-5", href: "#part-5", title: "Contact Us" },
+  ]}
+/>
         </div>
       </div>
     </nav>
