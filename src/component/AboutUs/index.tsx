@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="pl-12 pt-16">
+    <div className="pl-8 pt-16">
       <div className="  w-fit mx-auto  ">
         <h2 className="  ml-2  text-3xl font-bold md:text-5xl">About us</h2>
         <p className=" mt-6 max-sm:text-base  pb-2  lg:mt-10  text-xl md:text-md font-normal  text-gray-700 dark:text-gray-400">
