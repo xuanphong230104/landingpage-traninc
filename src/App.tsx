@@ -1,22 +1,35 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { Anchor, Col, Row } from "antd";
-import Navbar from "./component/Navbar";
-import Offer from "./component/Offer";
+import { BackTop } from "antd";
 import Home from "./pages/Home/index";
-import CardModal from "./component/Card";
+
 const App: React.FC = () => {
-  const topRef = React.useRef<HTMLDivElement>(null);
-  const [targetOffset, setTargetOffset] = useState<number>();
+  const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
-    setTargetOffset(topRef.current?.clientHeight);
+    const handleScroll = () => {
+      setVisible(window.scrollY > 800);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <div>
-      <Home/>
-      
+      <Home />
+      <div className="App">
+        {visible && (
+          <BackTop visibilityHeight={700} className="custom-back-top">
+            <div className="ant-back-top-inner">^</div>
+          </BackTop>
+        )}
+      </div>
     </div>
   );
 };
