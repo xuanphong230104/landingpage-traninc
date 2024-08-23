@@ -5,7 +5,7 @@ import "./index.scss"; // Import your custom CSS for home styles
 const Card = ({ title, description, icon }) => {
   return (
     <div className="cardContainer">
-      <a href="#" className="card">
+      <div  className="card">
         <div className=" ">
           <div className="iconContainer">
             <FontAwesomeIcon
@@ -22,7 +22,7 @@ const Card = ({ title, description, icon }) => {
             {description}
           </p>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

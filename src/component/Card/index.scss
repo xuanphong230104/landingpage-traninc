@@ -15,12 +15,6 @@
   max-width: 60rem;
   position: relative; // Allow absolute positioning of child elements
 
-  &:hover {
-    background-color: #f3f4f6; // Light gray background for light mode
-    .dark & {
-      background-color: #2d3748; // Dark gray background for dark mode
-    }
-  }
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -34,7 +28,7 @@
   justify-content: center;
   width: 92px; // Fixed width for the border container
   height: 92px; // Fixed height for the border container
-  margin-top: 2rem; // Adjust if needed
+  margin-top: 1.5rem; // Adjust if needed
   content: "";
   border: 2px solid black; // Border color and thickness
 
@@ -52,10 +46,12 @@
   justify-content: flex-start; // Align items to the start (top)
   padding-left: 1.5rem; // Add padding to make space for the title
   padding-right: 1rem;
+  margin-top: 2rem;
   line-height: 1.5;
   text-align: center; // Center-align text for smaller screens
   @media (min-width: 768px) {
     text-align: left; // Align text to the left for larger screens
+    
   }
 }
 
