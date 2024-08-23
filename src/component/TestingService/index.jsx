@@ -15,7 +15,7 @@ function TestingServices() {
   return (
     <>
       <Row>
-        <Col span={16} offset={4}>
+        <Col span={17} offset={4}>
           <div className=" ">
             {/* Title Section */}
             <div className="mx-auto w-fit ">

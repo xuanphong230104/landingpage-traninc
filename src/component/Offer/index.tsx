@@ -12,7 +12,7 @@ const Offer: React.FC = () => {
   return (
     <>
       <Row>
-        <Col span={16} offset={4}>
+        <Col span={17} offset={4}>
           <div className="p-6 w-fit mx-auto">
             {/* Title Section */}
             <h2 className="text-4xl pt-4 font-bold mb-6 lg:px-2 md:text-4xl lg:text-5xl">
