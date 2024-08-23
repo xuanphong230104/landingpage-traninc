@@ -11,7 +11,7 @@ const Offer: React.FC = () => {
   return (
     <div className="p-6 w-fit mx-auto">
       {/* Title Section */}
-      <h2 className="text-4xl pt-4   font-bold mb-6 lg:px-10 md:text-4xl lg:text-5xl">
+      <h2 className="text-4xl pt-4 font-bold mb-6 lg:px-2 md:text-4xl lg:text-5xl">
         Our Offer
       </h2>
 

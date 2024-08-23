@@ -15,7 +15,7 @@ function TestingServices() {
     <div className="pl-4 ">
       {/* Title Section */}
       <div className="mx-auto w-fit">
-        <h2 className="text-4xl pt-10 font-bold mb-6 md:text-4xl lg:px-40  lg:text-5xl ">
+        <h2 className="text-4xl pt-6 font-bold mb-6 md:text-4xl lg:px-24  lg:text-5xl ">
           Testing Services
         </h2>
 
