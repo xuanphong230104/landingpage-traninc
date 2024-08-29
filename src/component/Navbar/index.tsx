@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     // Scroll to the section smoothly
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth'  });
     }
     onClose(); // Close the drawer after navigation
   };

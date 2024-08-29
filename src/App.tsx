@@ -26,7 +26,7 @@ const App: React.FC = () => {
       <div className="App">
         {visible && (
           <FloatButton.BackTop className="custom-back-top  " shape="square" >
-            <div className="ant-back-top-inner">^</div>
+           
           </FloatButton.BackTop>
         )}
       </div>
