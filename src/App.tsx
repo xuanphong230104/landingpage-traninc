@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
+import "./index.scss";
 import { BackTop } from "antd";
 import Home from "./pages/Home/index";
 
-const App: React.FC = () => {
+const App= () => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {

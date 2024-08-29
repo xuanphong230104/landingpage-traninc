@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Carousel, Col, Row } from "antd";
 import Navbar from "../../component/Navbar/index.tsx";
 import Offer from "../../component/Offer/index.tsx";
-import TestingServices from "../../component/TestingService/index.jsx";
-import Footer from "../../component/Footer/index.jsx";
+import TestingServices from "../../component/TestingService/index.tsx";
+import Footer from "../../component/Footer/index.tsx";
 import AboutUs from "../../component/AboutUs/index.tsx";
 import Contact from "../../component/Contact/index.tsx";
 import "./index.scss"; // Import your custom CSS for home styles
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
         <Col span={24}>
           <div id="part-1" className="part-1-section" >
             <img
-              src="https://traninc.vn/wp-content/uploads/2019/08/IMG_4643-2-2-e1565661137708.jpg"
+              src="./logo.png"
               alt="background"
               className="part-1-bg  "
             />
