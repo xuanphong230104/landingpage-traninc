@@ -11,25 +11,14 @@
     right: 16px; /* Adjust as needed */
     bottom: 16px; /* Adjust as needed */
     z-index: 1000; /* Ensures it stays on top of other content */
-    opacity: 0; /* Start hidden */
-    animation: slide-in 0.5s forwards; /* Apply animation */
+   
   }
   
-  /* Define the slide-in keyframes */
-  @keyframes slide-in {
-    from {
-      transform: translateY(100px); /* Start from 100px below the viewport */
-      opacity: 0; /* Start hidden */
-    }
-    to {
-      transform: translateY(0); /* End at the final position */
-      opacity: 1; /* End visible */
-    }
-  }
+ 
   
   .ant-back-top-inner {
     background-color: black; /* Customize background color */
-    color: #fff; /* Customize text color */
+    color: #070707; /* Customize text color */
     border-radius: 50%;
     width: 40px; /* Customize width */
     height: 40px; /* Customize height */

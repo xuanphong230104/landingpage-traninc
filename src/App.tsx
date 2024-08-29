@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
-import { BackTop } from "antd";
+import {FloatButton } from "antd";
 import Home from "./pages/Home/index";
 
-const App= () => {
+const App: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
@@ -25,9 +25,9 @@ const App= () => {
       <Home />
       <div className="App">
         {visible && (
-          <BackTop visibilityHeight={700} className="custom-back-top">
+          <FloatButton.BackTop className="custom-back-top  " shape="square" >
             <div className="ant-back-top-inner">^</div>
-          </BackTop>
+          </FloatButton.BackTop>
         )}
       </div>
     </div>

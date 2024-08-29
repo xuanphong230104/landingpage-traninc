@@ -86,9 +86,8 @@ const Navbar: React.FC = () => {
           title="Menu"
           placement="right"
           onClose={onClose}
-          visible={drawerVisible}
+          open={drawerVisible}
           closable={false}
-          bodyStyle={{ padding: 0 }}
         >
           <Menu
             mode="inline"
