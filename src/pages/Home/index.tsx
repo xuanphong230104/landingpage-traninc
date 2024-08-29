@@ -32,7 +32,7 @@ const Home: React.FC = () => {
 
       {/* Page Sections */}
       <Row className="absolute">
-        <Col xs={24}>
+        <Col span={24}>
           <div id="part-1" className="part-1-section" >
             <img
               src="https://traninc.vn/wp-content/uploads/2019/08/IMG_4643-2-2-e1565661137708.jpg"
