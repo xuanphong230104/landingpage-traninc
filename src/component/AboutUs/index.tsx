@@ -4,8 +4,8 @@ import React from "react";
 const AboutUs: React.FC = () => {
   return (
     <>
-      <Row>
-        <Col span={16} offset={4}>
+      <Row justify={'center'}>
+        <Col xs={22} lg={22} xxl={24} >
           <div className=" pt-16">
             <div className="  w-fit mx-auto  ">
               <h2 className="  ml-2  text-3xl font-bold md:text-5xl">

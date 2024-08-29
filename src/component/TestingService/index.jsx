@@ -14,12 +14,12 @@ function TestingServices() {
 
   return (
     <>
-      <Row>
-        <Col span={17} offset={4}>
+      <Row justify={'center'}>
+        <Col xs={22} lg={24} span={17} >
           <div className=" ">
             {/* Title Section */}
             <div className="mx-auto w-fit ">
-              <h2 className="text-4xl pt-6 font-bold mb-6 md:text-4xl lg:px-8  lg:text-5xl ">
+              <h2 className="text-4xl pt-6 font-bold mb-6 md:text-4xl lg:px-8 md:px-0  lg:text-5xl ">
                 Testing Services
               </h2>
 
