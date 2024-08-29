@@ -14,7 +14,7 @@ function TestingServices() {
 
   return (
     <>
-      <Row justify={'center'}>
+      <Row justify={'center'} className="md:pl-6">
         <Col xs={22} lg={24} span={17} >
           <div className=" ">
             {/* Title Section */}
@@ -29,7 +29,7 @@ function TestingServices() {
               </p>
 
               {/* List Section */}
-              <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside ml-12  lg:px-36">
+              <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside ml-14  lg:px-36">
                 {listItems.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item}
