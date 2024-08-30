@@ -5,10 +5,10 @@ const AboutUs: React.FC = () => {
   return (
     <>
       <Row justify={'center'}>
-        <Col xs={22} lg={22} xxl={24} >
+        <Col xs={24} sm={22} xxl={18} md={22} xl={20}   >
           <div className=" pt-16">
-            <div className="  w-fit mx-auto  ">
-              <h2 className="  ml-2  text-3xl font-bold md:text-5xl">
+            <div className="   ">
+              <h2 className="   text-3xl font-bold md:text-5xl">
                 About us
               </h2>
               <p className=" mt-6 max-sm:text-base  pb-2  lg:mt-10  text-xl md:text-md font-normal  text-gray-700 dark:text-gray-400">

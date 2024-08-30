@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     <div>
       {/* Navbar */}
       <Navbar />
-
+   
       {/* Page Sections */}
       <Row className="absolute">
         <Col span={24}>
@@ -43,34 +43,34 @@ const Home: React.FC = () => {
             </div>
           </div>
         </Col>
-        <Col xs={24}>
-          <div ref={offerSectionRef} id="part-2" className="max-sm:pt-10 pt-6">
+        <Col span={24}>
+          <div ref={offerSectionRef} id="part-2" className="max-sm:pt-10 pt-6 pl-6">
             <Offer />
           </div>
           <div
             id="part-3"
             style={{ background: "rgba(0,0,0,0.02)" }}
-            className="max-sm:pt-10 pt-6"
+            className="max-sm:pt-10 pt-6 pl-6"
           >
             <TestingServices />
           </div>
           <div
             id="part-4"
-            className="part-4-section"
+            className="pl-6"
             style={{ background: "rgba(0,0,0,0.02)" }}
           >
             <AboutUs />
           </div>
           <div
             id="part-5"
-            className="part-5-section"
+            className="pl-6"
             style={{ background: "rgba(0,0,0,0.50)" }}
           >
             <Contact />
           </div>
           <div
             id="part-6"
-            className="part-6-section"
+            className="pl-6"
             style={{ background: "rgba(0,0,0,0.50)" }}
           >
             <Footer />
