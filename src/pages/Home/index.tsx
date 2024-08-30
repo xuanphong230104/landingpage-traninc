@@ -33,7 +33,7 @@ const Home: React.FC = () => {
                 time, and within budget.
               </div>
               <a
-                href="#part-2"
+                
                 className="offer-button"
                 style={{ transform: "scale(1.4)" }}
                 onClick={scrollToOffer}
