@@ -70,7 +70,7 @@ const Home: React.FC = () => {
           </div>
           <div
             id="part-6"
-            className="pl-6"
+            className=""
             style={{ background: "rgba(0,0,0,0.50)" }}
           >
             <Footer />
