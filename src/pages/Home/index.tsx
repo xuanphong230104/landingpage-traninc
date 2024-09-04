@@ -44,13 +44,13 @@ const Home: React.FC = () => {
           </div>
         </Col>
         <Col span={24}>
-          <div ref={offerSectionRef} id="part-2" className="max-sm:pt-10 pt-6 pl-6">
+          <div ref={offerSectionRef} id="part-2" className="max-sm:pt-10 pt-6 ">
             <Offer />
           </div>
           <div
             id="part-3"
             style={{ background: "rgba(0,0,0,0.02)" }}
-            className="max-sm:pt-10 pt-6 pl-6"
+            className="max-sm:pt-10 pt-6 "
           >
             <TestingServices />
           </div>

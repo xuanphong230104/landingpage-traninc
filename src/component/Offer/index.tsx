@@ -15,12 +15,12 @@ const Offer: React.FC = () => {
         <Col xs={24} sm={22} xxl={18} md={22} xl={20} >
           <div className="">
             {/* Title Section */}
-            <h2 className="text-4xl pt-4 font-bold mb-6  md:text-4xl lg:text-5xl">
+            <h2 className="text-4xl pt-4 font-bold mb-6  md:text-4xl lg:text-5xl pl-5">
               Our Offer
             </h2>
 
             {/* Card Grid Section */}
-            <div className="grid grid-cols-1 pt-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl mx-auto ">
+            <div className="grid grid-cols-1 pt-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl mr-4 ">
               <div className="flex justify-center ">
                 <Card
                   title="Independent testing services"

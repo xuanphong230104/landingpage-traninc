@@ -6,7 +6,7 @@ const Card = ({ title, description, icon }) => {
   return (
     <div className="cardContainer">
       <div  className="card">
-        <div className=" ">
+        <div className="">
           <div className="iconContainer">
             <FontAwesomeIcon
               icon={icon as IconProp}

@@ -18,7 +18,7 @@ function TestingServices() {
         <Col  xs={24} sm={22} xxl={18} md={22} xl={20}  >
           <div className=" ">
             {/* Title Section */}
-            <div className=" ">
+            <div className="pl-5 ">
               <h2 className="text-4xl pt-6 font-bold mb-6 md:text-4xl  lg:text-5xl ">
                 Testing Services
               </h2>
@@ -29,7 +29,7 @@ function TestingServices() {
               </p>
 
               {/* List Section */}
-              <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside ml-14  lg:px-36">
+              <ol className="text-base font-normal text-gray-700 dark:text-gray-400 list-decimal list-inside ml-14  lg:px-36 ">
                 {listItems.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item}
@@ -48,8 +48,8 @@ function TestingServices() {
             </div>
             {/* Cards Section */}
 
-            <div className="grid grid-cols-1  gap-6 max-w-screen-4xl md:ml-10 ">
-              <div className="flex justify-center items-center ">
+            <div className="grid grid-cols-1  gap-6 max-w-screen-4xl md:ml-10  mr-4">
+              <div className="flex justify-center items-center  ">
                 <Card
                   title="Functional and non-functional testing"
                   description="We do Functional testing to ensure that your product works according to your business logic and specific requirements. We also perform Performance testing like stress, load to ensure stable operation of your product. Compatibility testing is conducted to ensure your product works in various environments."
