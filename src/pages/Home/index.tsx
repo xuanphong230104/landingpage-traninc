@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     <div>
       {/* Navbar */}
       <Navbar />
-   
+
       {/* Page Sections */}
       <Row className="absolute">
         <Col span={24}>
@@ -33,7 +33,6 @@ const Home: React.FC = () => {
                 time, and within budget.
               </div>
               <a
-                
                 className="offer-button"
                 style={{ transform: "scale(1.4)" }}
                 onClick={scrollToOffer}

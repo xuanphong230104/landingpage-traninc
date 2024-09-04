@@ -5,7 +5,7 @@ import "./index.scss"; // Import your custom CSS for home styles
 const Card = ({ title, description, icon }) => {
   return (
     <div className="cardContainer">
-      <div  className="card">
+      <div className="card">
         <div className="">
           <div className="iconContainer">
             <FontAwesomeIcon
@@ -15,12 +15,8 @@ const Card = ({ title, description, icon }) => {
           </div>
         </div>
         <div className="textContainer">
-          <h5 className="title">
-            {title}
-          </h5>
-          <p className="description">
-            {description}
-          </p>
+          <h5 className="title">{title}</h5>
+          <p className="description">{description}</p>
         </div>
       </div>
     </div>

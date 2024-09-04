@@ -12,7 +12,7 @@ const Offer: React.FC = () => {
   return (
     <>
       <Row justify={"center"}>
-        <Col xs={24} sm={22} xxl={18} md={22} xl={20} >
+        <Col xs={24} sm={22} xxl={18} md={22} xl={20}>
           <div className="">
             {/* Title Section */}
             <h2 className="text-4xl pt-4 font-bold mb-6  md:text-4xl lg:text-5xl pl-5">

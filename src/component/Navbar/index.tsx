@@ -13,13 +13,16 @@ const Navbar: React.FC = () => {
   const onClose = () => {
     setDrawerVisible(false);
   };
-  const handleMenuClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const handleMenuClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
     e.preventDefault(); // Prevent default anchor behavior
 
     // Scroll to the section smoothly
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth'  });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     onClose(); // Close the drawer after navigation
   };
@@ -95,27 +98,27 @@ const Navbar: React.FC = () => {
             selectedKeys={[window.location.hash]}
           >
             <Menu.Item key="#part-1">
-              <a href="#part-1" onClick={(e) =>handleMenuClick(e,'part-1')}>
+              <a href="#part-1" onClick={(e) => handleMenuClick(e, "part-1")}>
                 Home
               </a>
             </Menu.Item>
             <Menu.Item key="#part-2">
-              <a href="#part-2" onClick={(e) =>handleMenuClick(e,'part-2')}>
+              <a href="#part-2" onClick={(e) => handleMenuClick(e, "part-2")}>
                 Our Offer
               </a>
             </Menu.Item>
             <Menu.Item key="#part-3">
-              <a href="#part-3" onClick={(e) =>handleMenuClick(e,'part-3')}>
+              <a href="#part-3" onClick={(e) => handleMenuClick(e, "part-3")}>
                 Testing Services
               </a>
             </Menu.Item>
             <Menu.Item key="#part-4">
-              <a href="#part-4" onClick={(e) =>handleMenuClick(e,'part-4')}>
+              <a href="#part-4" onClick={(e) => handleMenuClick(e, "part-4")}>
                 About Us
               </a>
             </Menu.Item>
             <Menu.Item key="#part-5">
-              <a href="#part-5" onClick={(e) =>handleMenuClick(e,'part-5')}>
+              <a href="#part-5" onClick={(e) => handleMenuClick(e, "part-5")}>
                 Contact Us
               </a>
             </Menu.Item>
@@ -123,26 +126,26 @@ const Navbar: React.FC = () => {
         </Drawer>
 
         <div className="hidden md:flex w-full md:w-auto">
-        <Anchor
-  onClick={(e) => e.preventDefault()}
-  bounds={2}
-  direction="horizontal"
-  className={`font-medium flex flex-row rtl:space-x-reverse ${
-    isSmallScreen ? "text-sm" : ""
-  }`}
-  affix={false}
-  style={{ 
-    backgroundColor: "inherit",
-    gap: "1.5rem" // Adds space between items
-  }}
-  items={[
-    { key: "part-1", href: "#part-1", title: "Home" },
-    { key: "part-2", href: "#part-2", title: "Our Offer" },
-    { key: "part-3", href: "#part-3", title: "Testing Services" },
-    { key: "part-4", href: "#part-4", title: "About Us" },
-    { key: "part-5", href: "#part-5", title: "Contact Us" },
-  ]}
-/>
+          <Anchor
+            onClick={(e) => e.preventDefault()}
+            bounds={2}
+            direction="horizontal"
+            className={`font-medium flex flex-row rtl:space-x-reverse ${
+              isSmallScreen ? "text-sm" : ""
+            }`}
+            affix={false}
+            style={{
+              backgroundColor: "inherit",
+              gap: "1.5rem", // Adds space between items
+            }}
+            items={[
+              { key: "part-1", href: "#part-1", title: "Home" },
+              { key: "part-2", href: "#part-2", title: "Our Offer" },
+              { key: "part-3", href: "#part-3", title: "Testing Services" },
+              { key: "part-4", href: "#part-4", title: "About Us" },
+              { key: "part-5", href: "#part-5", title: "Contact Us" },
+            ]}
+          />
         </div>
       </div>
     </nav>

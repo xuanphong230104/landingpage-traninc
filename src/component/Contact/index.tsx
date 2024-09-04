@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Row justify={"center"}>
-        <Col xs={22} sm={18} md={20}  lg={14}>
+        <Col xs={22} sm={18} md={20} lg={14}>
           <div className=" ">
             <h2 className="contact-title  py-5 text-2xl font-bold md:text-xl text-white ">
               Get in touch
